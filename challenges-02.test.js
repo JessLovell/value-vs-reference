@@ -71,7 +71,7 @@ const addBirthYearProperty = (obj, year) => {
 // ------------------------------------------------------------------------------------------------
 
 const setStatusAsAuthor = (people) => {
-  // Solution code here...
+  people.forEach(element => element.isAuthor = true);
 }
 
 
@@ -93,7 +93,7 @@ const setStatusAsAuthor = (people) => {
 // ------------------------------------------------------------------------------------------------
 
 const append = (list1, list2) => {
-  // Solution code here...
+  list2.forEach(element => list1.push(element));
 
 }
 
@@ -127,14 +127,14 @@ const append = (list1, list2) => {
 //   });
 // });
 
-describe('Testing challenge 3', () => {
-  test('It should add a property to an object', () => {
-    const a = { fullName: 'Octavia Butler' };
-    addBirthYearProperty(a, 1947);
+// describe('Testing challenge 3', () => {
+//   test('It should add a property to an object', () => {
+//     const a = { fullName: 'Octavia Butler' };
+//     addBirthYearProperty(a, 1947);
 
-    expect(a.yearBorn).toStrictEqual(1947);
-  });
-});
+//     expect(a.yearBorn).toStrictEqual(1947);
+//   });
+// });
 
 // describe('Testing challenge 4', () => {
 //   test('It should add a property to every object in an array', () => {
@@ -147,12 +147,12 @@ describe('Testing challenge 3', () => {
 //   });
 // });
 
-// describe('Testing challenge 5', () => {
-//   test('It should append the second array to the first', () => {
-//     const a = [1, 2, 3, 4];
-//     const b = [5, 6, 7, 8];
-//     append(a, b);
+describe('Testing challenge 5', () => {
+  test('It should append the second array to the first', () => {
+    const a = [1, 2, 3, 4];
+    const b = [5, 6, 7, 8];
+    append(a, b);
 
-//     expect(a).toStrictEqual([1, 2, 3, 4, 5, 6, 7, 8]);
-//   });
-// });
+    expect(a).toStrictEqual([1, 2, 3, 4, 5, 6, 7, 8]);
+  });
+});
