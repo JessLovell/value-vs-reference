@@ -30,7 +30,7 @@ const appendTheEnd = (str) => {
 // ------------------------------------------------------------------------------------------------
 
 const appendFirstToLast = (list) => {
-  // Solution code here...
+  list.push(list[0]);
 }
 
 // ------------------------------------------------------------------------------------------------
@@ -108,15 +108,15 @@ const append = (list1, list2) => {
 //
 // ------------------------------------------------------------------------------------------------
 
-describe('Testing challenge 1', () => {
-  test('It should append without modifying the oiginal', () => {
-    const a = 'This is my story.';
-    const b = appendTheEnd(a);
+// describe('Testing challenge 1', () => {
+//   test('It should append without modifying the oiginal', () => {
+//     const a = 'This is my story.';
+//     const b = appendTheEnd(a);
 
-    expect(a).toStrictEqual('This is my story.');
-    expect(b).toStrictEqual('This is my story. The end.');
-  });
-});
+//     expect(a).toStrictEqual('This is my story.');
+//     expect(b).toStrictEqual('This is my story. The end.');
+//   });
+// });
 
 // describe('Testing challenge 2', () => {
 //   test('It should append by modifying the oiginal', () => {
@@ -127,14 +127,14 @@ describe('Testing challenge 1', () => {
 //   });
 // });
 
-// describe('Testing challenge 3', () => {
-//   test('It should add a property to an object', () => {
-//     const a = { fullName: 'Octavia Butler' };
-//     addBirthYearProperty(a, 1947);
+describe('Testing challenge 3', () => {
+  test('It should add a property to an object', () => {
+    const a = { fullName: 'Octavia Butler' };
+    addBirthYearProperty(a, 1947);
 
-//     expect(a.yearBorn).toStrictEqual(1947);
-//   });
-// });
+    expect(a.yearBorn).toStrictEqual(1947);
+  });
+});
 
 // describe('Testing challenge 4', () => {
 //   test('It should add a property to every object in an array', () => {
