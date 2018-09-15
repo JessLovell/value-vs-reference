@@ -94,7 +94,6 @@ const setStatusAsAuthor = (people) => {
 
 const append = (list1, list2) => {
   list2.forEach(element => list1.push(element));
-
 }
 
 // ------------------------------------------------------------------------------------------------
